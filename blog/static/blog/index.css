@@ -1,6 +1,6 @@
 img {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 400px;
 }
 
 .post {
@@ -12,3 +12,11 @@ img {
     background-color: pink;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}

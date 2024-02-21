@@ -1,14 +1,35 @@
+{% load static %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %}
 <li>
     <article class="post">
-        <a href="{% url "single-post-page" slug="smoothie-recipe" %}">
-            <img src="" alt="Selva's posts">
+        <a href="{% url "single-post-page" slug="fitness-lifestyle" %}">
+            <div class="container">
+                <img src="{% static "blog/images/lifestyle.png" %}" alt="Gurveen's posts">
+            </div>
         </a>
         <div class="post__content">
-            <h3>Healthy Smoothie</h3>
+            <h3>5 Tips for following a healthy lifestyle</h3>
+            <p class="bold-text">1. Get regular checkups. </p>
             <p>
-                Smoothies are a good way to start you healthy day.
-                Try a smoothie for your breakfast.
-                Keeps you energetic and full of vigour.
+                These are important even when you feel healthy. They help catch problems early, when they’re usually easiest to treat. It’s always a good idea to review your medications with your healthcare provider and pharmacist.
+            </p>
+            <p class="bold-text">2. Exercise. </p>
+            <p>
+                Try to exercise at least 30 minutes most days a week. Exercise is good for your heart and improves strength and balance.
+            </p>
+            <p class="bold-text">3. Quit tobacco. </p>
+            <p>
+                People who use tobacco (including smokeless tobacco) have a higher risk for heart attack, stroke, lung disease, and throat and mouth cancer. If you’re a tobacco user, quitting is the most important thing you can do right now to improve your health.
+            </p>
+            <p class="bold-text">4. Limit alcohol and avoid drugs. </p>
+            <p>
+                Make smart choices and live a healthier life.
+            </p>
+            <p class="bold-text">5. Eat healthy foods. </p>
+            <p>
+                Include fruits, vegetables and whole grains in your meals. Drink water and avoid sugary beverages.
             </p>
         </div>
     </article>
